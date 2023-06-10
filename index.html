@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <title>
+    </title>
+    <style>
+        body {
+            background-color: rgb(85, 50, 150);
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .content {
+            text-align: center;
+        }
+        
+        .content h1 {
+            color: whitesmoke;
+            font-size: 80px;
+            margin-top: 1cm;
+        }
+        
+        .content p {
+            margin-top: 20px;
+            margin-bottom: 1cm;
+            color: whitesmoke;
+            /* Change the color to your preferred value */
+            font-weight: bold;
+            font-size: 15px;
+            /* Adjust the margin-top value to control the spacing between the <h1> and <p> elements */
+        }
+        
+        .content p a {
+            margin-top: 2cm;
+            font-size: 18px;
+            margin-bottom: 1cm;
+            color: white;
+            /* Change the color to your preferred value */
+            font-weight: bold;
+            /* Add any desired font-weight */
+            text-decoration: none;
+            /* Remove the underline if desired */
+        }
+        
+        .content h2 {
+            margin-bottom: 1cm;
+        }
+        
+        .content img {
+            width: 2 cm;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Sample Page</h1>
+        <p>Today is: {{ current_date }}</p>
+
+        <h2><img src=" {{ image_url }} " alt="Online Image "></h2>
+        <p><a href="{{external_url }}">Click this link to get random image</a></p>
+
+    </div>
+</body>
